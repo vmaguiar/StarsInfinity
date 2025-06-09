@@ -9,15 +9,16 @@ int main() {
 
     // Stars Creation
     std::vector<Star> stars = Star::initializateStars(config::starsCount);
+    uint32_t indxOfFirst = 0;
 
     while (window.isOpen()) {
         processEvents(window);
 
-        Star::makeStarsTravel(stars);
+        Star::makeStarsTravel(stars, indxOfFirst);
 
         window.clear();
         // Render...
-        Star::renderAndDrawStars(stars, window);
+        Star::renderAndDrawStars(stars, indxOfFirst, window);
         window.display();
     }
 }

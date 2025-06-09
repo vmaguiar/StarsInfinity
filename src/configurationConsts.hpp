@@ -9,10 +9,10 @@ namespace config {
     constexpr float configDeltaTime = 1.0f / static_cast<float>(maxFramerate);
 
     // Star Config
-    constexpr uint16_t starsCount = 1000;
+    constexpr uint32_t starsCount = 10000;
     constexpr float starRadius = 20.0f;
     constexpr float zDepthMax = 10.0f;
-    constexpr float zDepthMin = 0.5f;
+    constexpr float zDepthMin = 0.1f;
 
     // Camera Config
     constexpr float cameraSpeed = 1.0f;
