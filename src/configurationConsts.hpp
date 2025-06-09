@@ -11,4 +11,9 @@ namespace config {
     // Star Config
     constexpr uint16_t starsCount = 1000;
     constexpr float starRadius = 20.0f;
+    constexpr float zDepthMax = 10.0f;
+    constexpr float zDepthMin = 0.5f;
+
+    // Camera Config
+    constexpr float cameraSpeed = 1.0f;
 }

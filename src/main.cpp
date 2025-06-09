@@ -13,6 +13,8 @@ int main() {
     while (window.isOpen()) {
         processEvents(window);
 
+        Star::makeStarsTravel(stars);
+
         window.clear();
         // Render...
         Star::renderAndDrawStars(stars, window);
