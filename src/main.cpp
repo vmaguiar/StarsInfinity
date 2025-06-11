@@ -5,7 +5,7 @@
 #include "star.hpp"
 
 int main() {
-    sf::RenderWindow window = sf::RenderWindow(sf::VideoMode(config::windowSize), "Stars Infinity");
+    sf::RenderWindow window = sf::RenderWindow(sf::VideoMode(config::windowSize), "Stars Infinity", sf::State::Fullscreen);
     window.setFramerateLimit(config::maxFramerate);
 
     // Stars Creation

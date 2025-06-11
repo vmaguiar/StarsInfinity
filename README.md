@@ -103,7 +103,7 @@ Make sure you have the following installed:
 
 ## 📸 Screenshots / GIFs
 
-*(Coming soon! Add an image or a GIF here to showcase your simulation in action and give a visual idea of the project.)*
+![Star Infinity GIF](https://github.com/vmaguiar/StarsInfinity/blob/develop/res/readmeGIF.gif?raw=true)
 
 ---
 
