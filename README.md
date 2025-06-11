@@ -42,11 +42,12 @@ This project explores concepts of 2D graphics, texture manipulation, and real-ti
 
 ## 💡 Future Enhancements and Improvements
 
-* Performance optimizations to support an even larger number of stars.
-* Basic User Interface (GUI) for simulation settings.
-* Add user input controls (e.g., speed adjustment, pause).
-* Add camera control for a more immersive exp.
-* Implement different types of stars or particle effects.
+* [-] Performance optimizations to support an even larger number of stars.
+* [-] Basic User Interface (GUI) for simulation settings.
+* [-] Add user input controls (e.g., speed adjustment, pause).
+* [-] Add camera control for a more immersive exp.
+* [-] Implement different types of stars or particle effects.
+* [-] Release an esier-to-use .exe file (more straightforward for users.)
 
 ---
 
