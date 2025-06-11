@@ -22,6 +22,12 @@ This project explores concepts of 2D graphics, texture manipulation, and real-ti
 
 ---
 
+## 📸 Screenshots / GIFs
+
+![Star Infinity GIF](https://github.com/vmaguiar/StarsInfinity/blob/develop/res/readmeGIF.gif?raw=true)
+
+---
+
 ## ✨ Features
 
 * **Infinite Starfield**: Dynamic generation and removal of stars to simulate an endless universe.
@@ -31,6 +37,16 @@ This project explores concepts of 2D graphics, texture manipulation, and real-ti
 * **Custom Textures**: Utilizes PNG image files to render stars, allowing for greater visual fidelity compared to simple geometric
   shapes.
 * **SFML-Powered Rendering**: Leverages the power of the SFML library for efficient and fluid 2D graphics drawing.
+
+---
+
+## 💡 Future Enhancements and Improvements
+
+* Performance optimizations to support an even larger number of stars.
+* Basic User Interface (GUI) for simulation settings.
+* Add user input controls (e.g., speed adjustment, pause).
+* Add camera control for a more immersive exp.
+* Implement different types of stars or particle effects.
 
 ---
 
@@ -98,22 +114,6 @@ Make sure you have the following installed:
    ./bin/StarsInfinity
    ```
    The simulation window should appear, showing your journey through the stars.
-
----
-
-## 📸 Screenshots / GIFs
-
-*(Coming soon! Add an image or a GIF here to showcase your simulation in action and give a visual idea of the project.)*
-
----
-
-## 💡 Future Enhancements and Improvements
-
-* Performance optimizations to support an even larger number of stars.
-* Basic User Interface (GUI) for simulation settings.
-* Add user input controls (e.g., speed adjustment, pause).
-* Add camera control for a more immersive exp.
-* Implement different types of stars or particle effects.
 
 ---
 
