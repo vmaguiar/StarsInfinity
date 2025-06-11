@@ -1,3 +1,4 @@
+#include <iostream>
 #include <SFML/Graphics.hpp>
 #include "events.hpp"
 #include "configurationConsts.hpp"
@@ -8,6 +9,11 @@ int main() {
     window.setFramerateLimit(config::maxFramerate);
 
     // Stars Creation
+    sf::Texture starTexture;
+    if (!starTexture.loadFromFile("res/star.png", true)) {
+        std::cerr << "Failed to load texture" << std::endl;
+    }
+    starTexture.setSmooth(true);
     std::vector<Star> stars = Star::initializateStars(config::starsCount);
     uint32_t indxOfFirst = 0;
 
@@ -18,7 +24,7 @@ int main() {
 
         window.clear();
         // Render...
-        Star::renderAndDrawStars(stars, indxOfFirst, window);
+        Star::renderAndDrawStars(stars, indxOfFirst, starTexture, window);
         window.display();
     }
 }
