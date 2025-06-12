@@ -1,8 +1,8 @@
 #include "star.hpp"
 #include <algorithm>
-#include <iostream>
+// #include <iostream>
 
-std::vector<Star> Star::initializateStars(uint16_t contador) {
+std::vector<Star> Star::bootStars(uint16_t contador) {
     static std::vector<Star> stars;
     stars.reserve(contador);
 
@@ -26,20 +26,25 @@ std::vector<Star> Star::initializateStars(uint16_t contador) {
     return stars;
 }
 
-void Star::renderAndDrawStars(std::vector<Star> &stars, uint32_t &indxOfFirst, sf::RenderWindow &window) {
+void Star::renderAndDrawStars(std::vector<Star> &stars, const uint32_t &indxOfFirst, const sf::Texture &texture,
+                              sf::RenderWindow &window) {
     sf::CircleShape shape{config::starRadius};
     shape.setOrigin({config::starRadius, config::starRadius});
+
+    sf::Sprite starSprite(texture);
+    starSprite.setOrigin({static_cast<float>(texture.getSize().x) * 0.5f, static_cast<float>(texture.getSize().y) * 0.5f});
 
     for (uint32_t i = 0; i < config::starsCount; i++) {
         uint32_t idx = (i + indxOfFirst) % config::starsCount;
         Star &star = stars[idx];
 
         if (star.starDepth > config::zDepthMin) {
-            shape.setPosition(star.position * star.starScale + (config::windowSize_f * 0.5f));
-            shape.setScale({star.starScale, star.starScale});
+            starSprite.setTexture(texture);
+            starSprite.setPosition(star.position * star.starScale + (config::windowSize_f * 0.5f));
+            starSprite.setScale({star.starScale, star.starScale});
             star.setStarColor();
-            shape.setFillColor({star.starColor, star.starColor, star.starColor});
-            window.draw(shape);
+            starSprite.setColor({star.starColor, star.starColor, star.starColor});
+            window.draw(starSprite);
         }
     }
 }
