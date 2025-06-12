@@ -12,7 +12,7 @@ struct Star {
     float colorRatio = 1.0f;
     uint8_t starColor = 255;
 
-    static std::vector<Star> initializateStars(uint16_t contador);
+    static std::vector<Star> bootStars(uint16_t contador);
 
     static void renderAndDrawStars(std::vector<Star> &stars, const uint32_t &indxOfFirst, const sf::Texture &texture,
                                    sf::RenderWindow &window);

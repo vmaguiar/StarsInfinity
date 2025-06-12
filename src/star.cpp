@@ -2,7 +2,7 @@
 #include <algorithm>
 // #include <iostream>
 
-std::vector<Star> Star::initializateStars(uint16_t contador) {
+std::vector<Star> Star::bootStars(uint16_t contador) {
     static std::vector<Star> stars;
     stars.reserve(contador);
 
